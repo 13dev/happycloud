@@ -1,0 +1,425 @@
+/*
+ * CSS UI V1.3 (June 15 2013)
+ * http://css-ui.com
+ *
+ * Copyright 2013, http://codeeverywhere.ca
+ * Licensed under the MIT license.
+ *
+ */
+ 
+.ui-message-blue, .ui-message-green, .ui-message-yellow, .ui-message-red
+{
+	border-width: 2px; 
+	border-style: solid;
+	border-radius: 3px;
+	padding: 10px;
+	text-transform: capitalize;
+}
+.ui-message-blue {	color: #185b84; background: #6FC8EE; border-color: #2C95D6; } 
+.ui-message-green { color: #34710d; background: #7ae23d; border-color: #54B312; } 
+.ui-message-yellow { color: #7b6800; background: #F0DF00; border-color: #D2B300; } 
+.ui-message-red { color: #461715; background: #E65141; border-color: #AA3A37; } 
+
+
+
+.ui-button-white, .ui-button-blue, .ui-button-green,
+.ui-button-yellow, .ui-button-red, .ui-button-black,
+.ui-button-pink, .ui-button-orange
+{
+	display: inline-block;
+	padding: 5px 15px;
+	border-style: solid;
+	border-width: 1px 1px 3px 1px;
+	border-radius: 4px;			
+	margin: 5px 5px 0 0;
+	cursor: pointer;
+	text-decoration: none;
+	text-align: center;
+	box-shadow: 0 1px 1px rgba(0,0,0,.2), inset 0 1px 0px rgba(255,255,255,.2);
+	text-shadow: 1px 1px 0px rgba(0,0,0,.3);
+	
+}
+.ui-button-white:active, .ui-button-blue:active, .ui-button-green:active,
+.ui-button-yellow:active, .ui-button-red:active, .ui-button-black:active,
+.ui-button-pink:active, .ui-button-orange:active
+{
+	position: relative;
+	top: 1px;
+	border-bottom-width: 2px;
+	margin-bottom: 1px;
+	box-shadow: 0 1px 1px rgba(0,0,0,.1), inset 0 1px 0px rgba(255,255,255,.1);
+}
+.ui-button-white{ color: #6a6a6a; background: #FCFCFC; border-color: #b3b3b3; text-shadow: 0px 1px 0px #f4f4f4;}
+.ui-button-white:hover{ background: #ffffff; }
+.ui-button-blue{ color: #ffffff; background: #74cfed; border-color: #24a1d6; }
+.ui-button-blue:hover{ background: #78d4f2; }
+.ui-button-green{ color: #ffffff; background: #71d858; border-color: #56bb3e; }
+.ui-button-green:hover{ background: #7cdb63; }
+.ui-button-yellow{ color: #ffffff;	background: #f2e202; border-color: #d9ba3a; }
+.ui-button-yellow:hover{ background: #f5e825; }
+.ui-button-red{ color: #ffffff; background: #ee5a4f; border-color: #b74141; }
+.ui-button-red:hover{ background: #f4786f; }
+.ui-button-orange{ color: #ffffff; background: #F7AB2B; border-color: #cc8500; } 
+.ui-button-orange:hover{ background: #f3bd5e; }
+.ui-button-black{ color: #ffffff; background: #505050; border-color: #1A1A1A; text-shadow: 0px 1px 0px #000000; }
+.ui-button-black:hover{ background: #5E5E5E; }
+.ui-button-pink{ color: #ffffff; background: #ff8bb1; border-color: #df688c; }
+.ui-button-pink:hover{ background: #f49dba; }
+
+
+
+.ui-label, .ui-label-green, .ui-label-red, .ui-label-black, .ui-label-yellow
+{
+	font-size: 12px;
+	padding: 4px;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	border-radius: 3px;
+	border-width: 1px;
+	border-style: solid;
+}
+.ui-label{color: #C1C1C1; border-color: #C1C1C1; }
+.ui-label-green{ color: #54B312; border-color: #54B312; }
+.ui-label-red{ color: #E65141; border-color: #E65141; }
+.ui-label-yellow{ color: #f2e202; border-color: #f2e202; }
+.ui-label-black{ color: #464646; border-color: #464646; }
+
+
+
+table.ui, table.ui-min{
+	text-align: left;
+	border-spacing: 0;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+table.ui{
+	background: #fff;
+}
+table.ui-min tr th, table.ui-min tr td{
+	padding: 10px;
+	border-top-color: white;
+	border-bottom: 1px solid #dcdcdc;
+}
+table.ui{ border: 1px solid #cccccc; }
+table.ui tr th{ background: #e7e7e7; }
+table.ui tr th, table.ui tr td{
+	padding: 10px;
+	border-top-color: white;
+	border-bottom: 1px solid #ccc;
+}
+table.ui-grid tr th, table.ui-grid tr td{ border-left: 1px solid #ccc; }
+table.ui tr:hover, table.ui-min tr:hover {
+  background-color: #f6f6f6;
+  -webkit-transition: all 0.3s;
+  -moz-transition:    all 0.3s;
+  -ms-transition:     all 0.3s;
+  -o-transition:      all 0.3s;
+}
+
+
+.ui-loading{
+    position: relative;
+    background-color: #254fbb;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 15px;
+    margin-right: 6px;
+    content: ' ';
+    -moz-animation: ui-loading 1s infinite ease;
+    -webkit-animation: ui-loading 1s infinite ease;
+    animation: ui-loading 1s infinite ease;
+}
+@-moz-keyframes ui-loading {
+    0% { left: 0; top: 0; }
+    20% { left: 0; top: -5px; }
+    40% { left: 0; top: -10px; }
+    60% { left: 0; top: -10px; }
+    80% { left: 0; top: -5px; }
+    100% { left: 0; top: 0; }
+}
+@-webkit-keyframes ui-loading {
+    0% { left: 0; top: 0; }
+    20% { left: 0; top: -5px; }
+    40% { left: 0; top: -10px; }
+    60% { left: 0; top: -10px; }
+    80% { left: 0; top: -5px; }
+    100% { left: 0; top: 0;}
+}
+@keyframes ui-loading {
+    0% { left: 0; top: 0; }
+    20% { left: 0; top: -5px; }
+    40% { left: 0; top: -10px; border-radius: 15px 15px 5px 5px; }
+    60% { left: 0; top: -10px; }
+    80% { left: 0; top: -5px; }
+    100% { left: 0; top: 0; }
+}
+.ui-highlight{ background: #ffee66; padding: 1px 3px 1px 1px; font-weight: bold; }
+
+input[type=text], input[type=password], input[type=file]{
+    margin-bottom: 5px;
+    font-size: 14px;
+    margin-left: 5px;
+    color: #212121;
+    border: 1px solid #999999;
+    padding: 5px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+input[type=text]:hover, input[type=password]:hover, input[type=file]:hover
+{
+	border: 1px solid #9bc53d;
+}
+
+input[type=checkbox], input[type=radio] {
+    height: 15px;
+    width: 15px;
+}
+textarea {
+    font-size: 14px;
+    margin-left: 5px;
+    color: #212121;
+    border: 1px solid #999999;
+    padding: 5px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+input[type=button].ui, input[type=submit].ui{
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+    margin-right: 5px;
+    color: #343434;
+    text-decoration: none;
+    background: #f8f8f8;
+    background: -moz-linear-gradient(#f8f8f8, #dedede);
+    background: -webkit-linear-gradient(#f8f8f8, #dedede);
+    background: -o-linear-gradient(#f8f8f8, #dedede);
+    background: -ms-linear-gradient(#f8f8f8, #dedede);
+    background: linear-gradient(#f8f8f8, #dedede);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,.1);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,.1);
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    border: 1px solid #999999;
+}
+
+input[type=button].ui-red{
+   	background: #d23328;
+    background: -moz-linear-gradient(#d23328, #b73022);
+    background: -webkit-linear-gradient(#d23328, #b73022);
+    background: -o-linear-gradient(#d23328, #b73022);
+    background: -ms-linear-gradient(#d23328, #b73022);
+    background: linear-gradient(#d23328, #b73022);
+	border-color: #b32f22;
+	color: white;
+}
+
+input[type=button].ui-blue{
+   	background: #178fdf;
+    background: -moz-linear-gradient(#178fdf, #1b7dbe);
+    background: -webkit-linear-gradient(#178fdf,#1b7dbe);
+    background: -o-linear-gradient(#178fdf, #1b7dbe);
+    background: -ms-linear-gradient(#178fdf, #1b7dbe);
+    background: linear-gradient(#178fdf, #1b7dbe);
+	border-color: #0d78c0;
+	color: white;
+}
+
+
+input[type=button]:hover {
+    color: #0a0a0a;
+    border-color: #878787;
+    background: #fdfdfd;
+    background: -moz-linear-gradient(#fdfdfd, #e3e3e3);
+    background: -webkit-linear-gradient(#fdfdfd, #e3e3e3);
+    background: -o-linear-gradient(#fdfdfd, #e3e3e3);
+    background: -ms-linear-gradient(#fdfdfd, #e3e3e3);
+    background: linear-gradient(#fdfdfd, #e3e3e3);
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 0 5px rgba(0,0,0,.3);
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+}
+
+input[type=button].ui-red:hover{
+	color: white;
+	border-color: #9c281f;
+   	background: #d23328;
+    background: -moz-linear-gradient(#d23328, #af2c21);
+    background: -webkit-linear-gradient(#d23328, #af2c21);
+    background: -o-linear-gradient(#d23328, #af2c21);
+    background: -ms-linear-gradient(#d23328, #af2c21);
+    background: linear-gradient(#d23328, #af2c21);
+}
+
+input[type=button].ui-blue:hover{
+   	background: #178fdf;
+    background: -moz-linear-gradient(#178fdf, #1b7dbe);
+    background: -webkit-linear-gradient(#178fdf,#1b7dbe);
+    background: -o-linear-gradient(#178fdf, #1b7dbe);
+    background: -ms-linear-gradient(#178fdf, #1b7dbe);
+    background: linear-gradient(#178fdf, #1b7dbe);
+	border-color: #0d78c0;
+	color: white;
+}
+
+
+input[type=button]:active {
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,.3);
+    -moz-box-shadow: inset 0 0 5px rgba(0,0,0,.3);
+    box-shadow: inset 0 0 5px rgba(0,0,0,.3);
+}
+input[disabled=disabled], input[disabled=disabled]:hover {
+    margin-left: 5px;
+    padding: 5px 10px 5px 10px;
+    background: #f8f8f8;
+    background: -moz-linear-gradient(#f8f8f8, #dedede);
+    background: -webkit-linear-gradient(#f8f8f8, #dedede);
+    background: -o-linear-gradient(#f8f8f8, #dedede);
+    background: -ms-linear-gradient(#f8f8f8, #dedede);
+    background: linear-gradient(#f8f8f8, #dedede);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,.1);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,.1);
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    text-decoration: none;
+    color: #838383;
+    border: 1px solid #999999;
+}
+
+/*
+ * CSS UI Extended V1.3 (June 10 2013)
+ * http://css-ui.com
+ *
+ * Copyright 2013, http://codeeverywhere.ca
+ * Licensed under the MIT license.
+ *
+ */
+
+.ui-backdrop{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: none;    
+    background: rgba(0,0,0,.6);
+    background: -webkit-gradient(radial, center center, 0, center center, 950, from(rgba(0,0,0,.3)), to(rgba(0,0,0,.6)));
+    top: 0;
+    left: 0;
+    z-index: 998;
+}
+.ui-notify-red, .ui-notify-green{
+	position: fixed;		
+	width: 300px;
+	min-height: 50px;
+	top: 0;
+	right: 0;
+	z-index: 999;
+    margin: 10px;
+    text-align: left;			
+    background-color: #f4f4f4;
+	display: none;
+	border-radius: 2px;
+	-webkit-box-shadow: 0px 0px 5px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 0 5px rgba(0,0,0,.2);				
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+    border: 1px solid #bcbcbc;
+}
+.ui-notify-green .ui-notify-icon:before{ content: '\2713'; }
+.ui-notify-red .ui-notify-icon:before{ content: '\2715'; }
+.ui-notify-green .ui-notify-icon{ background: #71d858; border-color: #56bb3e; }
+.ui-notify-red .ui-notify-icon{ background: #ee5a4f; border-color: #b74141; }
+.ui-notify-icon{
+	float: left;
+	margin: 8px;
+	width: 36px;
+	height: 36px;
+	font-size: 31px;
+	text-align: center;
+	color: #fff;
+	border-width: 3px;
+	border-style: solid;
+	border-radius: 25px;
+}
+.ui-notify-content{
+	width: 220px;
+	float: right;
+	height: 38px;
+	padding: 10px;
+	color: #767676;
+	text-transform: capitalize;
+	border-left: 1px solid #e6e6e6;
+	background: #fff;
+}
+
+
+
+.ui-alert{
+	position:relative;		
+	width: 450px;
+	display: none;
+	margin: 75px auto;
+    text-align: left;			
+    background-color: #fff;
+	z-index: 999;
+	border: 1px solid #eaeaea;	
+	border-radius: 2px;
+	-webkit-box-shadow: 0px 0px 25px rgba(0,0,0,.4);
+	-moz-box-shadow: 0 0 25px rgba(0,0,0,.4);				
+    box-shadow: 0 0 25px rgba(0,0,0,.4);	
+}
+.ui-alert-title{
+	background: #f4f4f4;
+	padding: 10px;
+	border-bottom: 1px solid #e1e1e1;
+	text-transform: capitalize;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.ui-alert-content{
+	padding: 10px;
+}
+.ui-alert-footer{
+	text-align: right;
+	padding: 10px;
+	border-top: 1px solid #eaeaea;
+}
+
+
+
+.ui-lightbox{
+	width: 450px;
+	position: relative;		
+    display: none;
+    margin: 50px auto;					
+    background-color: black;
+    padding: 0px;
+	z-index: 999;
+	-webkit-box-shadow: 0px 0px 25px rgba(0,0,0,.6);
+	-moz-box-shadow: 0 0 25px rgba(0,0,0,.6);				
+    box-shadow: 0 0 25px rgba(0,0,0,.6);
+}
+.ui-lightbox-close{
+	text-decoration: none;
+	position: absolute;
+	text-shadow: 0px 0px 1px #7a7a7a;	
+	color: white;
+	top: 0px;
+	right: 10px;
+	width: 25px;
+	height: 25px;
+	font-size: 38px;
+	opacity: 0.2;
+}
+.ui-lightbox-close:hover{
+	opacity: 1;
+}

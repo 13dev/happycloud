@@ -1,0 +1,17 @@
+RewriteEngine On
+
+RewriteBase /
+
+DirectoryIndex views/index.php
+
+RewriteRule ^m$ views/mobile_index.php [L]
+RewriteRule ^m/([a-zA-Z0-9]{1,})$ views/mobile_view.php?shortURL=$1 [L]
+
+RewriteRule ^upload.php$ views/upload.php [L]
+RewriteRule ^download.php$ views/download.php [L,R]
+
+RewriteRule ^api$ controller.php?method=api [L]
+
+RewriteRule ^(upload|index|dashboard|editor)[\.php\?ajax]?$ views/$1.php [L]
+
+RewriteRule ^([a-zA-Z0-9]{1,})$ views/view.php?shortURL=$1 [L]

@@ -1,0 +1,166 @@
+/* File:	BitDrop - bitdrop-mobile.css - v1.4
+ * Date:	June 17, 2013
+ * Copyright (C) 2013 by http://codeeverywhere.ca */
+body {
+    width: 600px;
+    font-family: Helvetica, serif;
+    background: #fafafa;
+    font-size: 26px;
+}
+.header {
+    background: #f8f8f8;
+    border-bottom: 1px solid #b9b9b9;
+    font-size: 45px;
+    padding: 25px;
+}
+.wrapper {
+    width: 560px;
+    margin: 0px auto;
+}
+.logo {
+    text-decoration: none;
+    color: #323232;
+    font-weight: bold;
+}
+hr {
+    height: 2px;
+    border: 0;
+    background: #f1f1f1;
+    margin: 25px 0 25px 0;
+}
+.box {
+    margin-top: 35px;
+    background: #ffffff;
+    border: 1px solid #e7e7e7;
+    border-radius: 2px;
+    padding: 20px;
+}
+h2 {
+    font-weight: normal;
+    color: #d4d4d4;
+    font-size: 24px;
+    text-transform: capitalize;
+}
+.num { color: #d2d2d2 }
+.view-progress,
+.view-uploaded,
+#bitdrop-options { display: none }
+#bitdrop-options { font-size: 38px }
+input[type=file] {
+    border: 1px solid #555;
+    width: 500px;
+    margin: 20px;
+    font-size: 40px;
+    background: #f8f8f8;
+    padding: 20px 10px 20px 10px;
+}
+input[type=password] {
+    border: 1px solid #555;
+    width: 480px;
+    margin: 20px;
+    font-size: 40px;
+    background: #f8f8f8;
+    padding: 5px;
+}
+input[type=checkbox] {
+    width: 50px;
+    height: 50px;
+}
+.green-button {
+    font-size: 40px;
+    display: block;
+    padding: 5px 15px;
+    width: 510px;
+    border-style: solid;
+    border-width: 1px 1px 3px 1px;
+    border-radius: 4px;
+    margin: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0,0,0,.2), inset 0 1px 0px rgba(255,255,255,.2);
+    text-shadow: 1px 1px 0px rgba(0,0,0,.3);
+    color: #ffffff;
+    background: #71d858;
+    border-color: #56bb3e;
+}
+.white-button {
+    font-size: 40px;
+    display: block;
+    padding: 5px 15px;
+    width: 510px;
+    border-style: solid;
+    border-width: 1px 1px 3px 1px;
+    border-radius: 4px;
+    margin: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0,0,0,.2), inset 0 1px 0px rgba(255,255,255,.2);
+    text-shadow: 1px 1px 0px rgba(0,0,0,.3);
+    color: #6a6a6a;
+    background: #FCFCFC;
+    border-color: #b3b3b3;
+    text-shadow: 0px 1px 0px #f4f4f4;
+}
+#progress_outline {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 540px;
+    padding: 5px;
+    border-color: #b3b3b3;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+}
+#progress_bar {
+    background-color: #e6e6e6;
+    height: 50px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+}
+#progress_done {
+    height: 50px;
+    background-color: #b5e9a5;
+    width: 0px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+}
+#progress_done a { color: #191919 }
+#num {
+    text-align: center;
+    width: 540px;
+    position: relative;
+    color: #333333;
+    padding-top: 3px;
+    font-size: 35px;
+}
+.another {
+    padding-left: 300px;
+    color: #8d8d8d;
+}
+.center {
+    text-align: center;
+    margin-top: 25px;
+}
+.footer {
+    margin: 20px;
+    text-align: center;
+}
+.red { color: #cf2424 }
+table { border-spacing: 0 }
+th,
+td {
+    padding: 10px;
+    border-bottom: 1px solid #dcdcdc;
+}
+.preview img {
+    padding: 4px;
+    background: #fff;
+    border: 1px solid #f1f1f1;
+}
+table a { color: #767676 }
